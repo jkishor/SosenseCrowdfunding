@@ -1,0 +1,125 @@
+.progressbarcontainer{
+ width: 94%;
+ border: 1px solid #ddd;
+ border-radius: 3px;
+ overflow: hidden;
+ display: inline-block;
+ margin: 20px 0px 20px 3%;
+ vertical-align: top;
+ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3) inset;
+}
+
+.progressbar {
+ color: #fff;
+ text-align: center;
+ height: 25px;
+ width: 0;
+ background-color: #fe4a1a; 
+ min-width:30px;
+ font-size: 15px;
+}
+.widget-border-bottom {
+border-bottom: 1px solid #bdc3c7 ;
+border-top: 1px solid #bdc3c7;
+}
+.download-author, .download-author-bio, .download-author-social, .download-author-sales, .download-author-message, .download-product-details .download-info{
+margin: 0;
+padding: 25px;
+border-bottom: 1px solid #bdc3c7;
+position: relative;
+clear: both;
+}
+.download-author {
+text-align: center;
+overflow: hidden;
+}
+.download-product-details, .download-product-review-details {
+border: 1px solid #bdc3c7;
+margin: 0 0 45px;
+}
+.download-product-details .download-purchases, .download-product-details .download-comments, .download-product-details .download-ratings, .download-product-details .download-author-sales {
+width: 50% !important;
+padding: 30px 0px !important;
+}
+.download-product-details .download-purchases {
+border-right: 1px solid #bdc3c7;
+}
+.download-product-details {
+padding: 0;
+overflow: hidden;
+}
+
+/************************CSS for Funding Grid Stat*************************/
+.country{color:#B5B3B3;}
+.Funding{
+margin-top: 3px;
+}
+.progressbarcontainer{
+ width: 94%;
+ border: 1px solid #ddd;
+ border-radius: 3px;
+ overflow: hidden;
+ display: inline-block;
+ margin: 20px 0px 20px 3%;
+ vertical-align: top;
+ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3) inset;
+}
+.progressbarcontainer1{
+ width: 94%;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ overflow: hidden;
+ display: inline-block;
+ margin: 20px 0px 8px 0%;
+ vertical-align: top;
+ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3) inset;
+}
+.progressbar {
+ color: #fff;
+ text-align: center;
+ height: 25px;
+ width: 0;
+ background-color: #fe4a1a; 
+ min-width:30px;
+ font-size: 15px;
+}
+.progressbar1 {
+ color: #fff;
+ text-align: center;
+ height:10px;
+ width: 0;
+ background-color: #2CCD72; 
+ font-size: 15px;
+}
+.widget-border-bottom {
+border-bottom: 1px solid #bdc3c7 ;
+border-top: 1px solid #bdc3c7;
+}
+.download-author, .download-author-bio, .download-author-social, .download-author-sales, .download-author-message, .download-product-details .download-info{
+margin: 0;
+padding: 25px;
+border-bottom: 1px solid #bdc3c7;
+position: relative;
+clear: both;
+}
+.download-author {
+text-align: center;
+overflow: hidden;
+}
+.download-product-details, .download-product-review-details {
+border: 1px solid #bdc3c7;
+margin: 0 0 45px;
+}
+.download-product-details .download-purchases, .download-product-details .download-comments, .download-product-details .download-ratings, .download-product-details .download-author-sales {
+width: 50% !important;
+padding: 30px 0px !important;
+}
+.download-product-details .download-purchases {
+border-right: 1px solid #bdc3c7;
+}
+.download-product-details {
+padding: 0;
+overflow: hidden;
+}
+
+

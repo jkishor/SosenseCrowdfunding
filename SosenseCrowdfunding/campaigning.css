@@ -1,0 +1,304 @@
+.black_div{
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+background: black;
+z-index: 999701;
+display: inline-block;
+opacity: 0.5;
+}
+.white_div{
+display: block;
+position:fixed;
+background: #FFF;
+padding: 5% 2%;
+margin: 0 auto;
+width:40%;
+z-index: 999999;
+height:490px;
+top:2%;
+left: 30%;
+right: 30%;
+
+}
+.close{
+background: #fff;
+border: none;
+width: 44px;
+height: 44px;
+line-height: 44px;
+position: absolute;
+right: 0;
+top: 0;
+text-decoration: none;
+text-align: center;
+opacity: 0.65;
+padding: 0 0 18px 10px;
+color:#333333;
+font-style: normal;
+font-size: 28px;
+font-family: Arial, Baskerville, monospace;
+}
+.button_custom{
+padding: 13px 30px 15px;
+box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .25);
+background-color:#F16562;
+position: relative;
+margin-top: 25px;
+width: 30%;
+margin-bottom: 20px;
+border-radius: 5px;
+color: #ffffff !important;
+font: bold 22px 'Lato', sans-serif;
+font-size: 15px;
+text-transform: uppercase;
+}
+.main_div{
+width: 21.8%;
+cursor: pointer;
+box-shadow: inset 0 -3px 0 #ffffff;
+padding: 1% 1%;
+float: left;
+margin-left: 1%;
+height: 200px;
+}
+.cont{
+margin: 0 auto;
+display: inline-block;
+width: 100%;
+margin-left:0%;
+margin-right:0%;
+}
+
+.edd_download_purchase_form .edd_price_options{
+clear: both;
+padding: 10px 0 0;
+}
+
+.input_and_button .atcf_custom_price_wrap {
+margin: 0;
+width:65%;
+float: left;
+}
+
+.atcf_custom_price_wrap input {
+margin: 0 8px !important;
+padding: 13px 15px !important;
+width: 90%;
+border-radius: 4px;
+font: 400 17px "Lato", Helvetica, sans-serif;
+background: #ebebeb !important;
+}
+.outer_div_all_options{
+clear: both;
+padding: 30px 0 0;
+}
+.input_and_button .edd-add-to-cart{
+background-color: #f16562 !important;
+font-size: 15px;
+padding: 9px 11px 13px;
+font: bold 18px 'Lato', sans-serif;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+margin: 0;
+border-radius: 4px;
+box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .25);
+border: none;
+}
+.input_and_button .edd-add-to-cart .edd-add-to-cart-label{font-size: 15px;}
+.input_and_button{
+display: inline-block;
+width: 100%;
+}
+/*******************************Changed popup css***************************************/
+
+.purchase_form .edd_download_purchase_form p input{
+margin: 0 8px !important;
+padding: 13px 15px !important;
+width: 90% !important;
+border-radius: 4px;
+font: 400 17px "Lato", Helvetica, sans-serif;
+background: #ebebeb !important;
+}
+.pop_heading{margin-top:-57px;}
+.edd_purchase_submit_wrapper{margin-top: -16px;text-align:center;}
+
+.input_and_button .atcf_custom_price_wrap{display: none;}
+
+ @media screen and (max-width:1230px){
+.white_div{
+	width:47%;
+	height: 100%;	
+	}
+	.edd_download_purchase_form .edd_price_options ul{margin-top: -12px;}
+	.pop_heading {
+	margin-top: -42px;
+	}
+}
+
+@media screen and (max-width:1024px){
+.white_div{
+	width:55%;
+	left: 22%;
+	}
+	
+
+}
+
+@media screen and (max-width:850px){
+	.white_div{
+	width: 65%;
+	left: 15%;
+	height: 80%;
+	}
+	.pop_heading {
+	margin-top: -3px;
+	}
+	.cont{
+	width: 90%;
+	}
+	.edd_download_purchase_form .edd_price_options ul{
+	height: 200px;
+	overflow-y: scroll;
+	}
+	.input_and_button .edd_purchase_submit_wrapper {
+	margin-top: 0px;
+	text-align: center;
+	}
+
+}
+
+@media screen and (max-width:784px){
+.white_div{
+	width:75%;
+	left: 10%;
+	}
+	.input_and_button .edd_purchase_submit_wrapper {
+	margin-top: 0px;
+	text-align: center;
+	}
+	.cont{width:90%;}
+	.main_div{width: 100%;margin-bottom: 20px;padding: 3% 4%;	}
+	
+}
+
+@media screen and (max-width:670px){
+.white_div{
+	width:80%;
+	left:7%;
+	}
+	.main_div{
+	width:100%;
+	padding: 3% 4%;	
+	}
+	.input_and_button{width:92%;}
+} 
+
+@media screen and (max-width:570px){
+	
+	.close{
+	width: 25px;
+	height: 24px;
+	line-height: 19px;
+	font-size: 22px;
+	padding:0px !important;
+	}
+	.white_div{
+	height:90%;
+	}
+	.input_and_button {
+	width: 85%;
+	}
+	.purchase_form .edd_download_purchase_form .edd_price_options ul{
+	height: 219px;
+	overflow-y: scroll;
+	margin-left: 20px;
+	}
+	.input_and_button .atcf_custom_price_wrap{width: 60%;}
+}
+
+@media screen and (max-width: 480px){
+	.main_div{
+	width:100%;	
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 15px;
+	padding: 6% 5% 0% 5%;
+	}
+
+	.close{
+	width: 30px;
+	height: 30px;
+	line-height: 19px;
+	font-size: 22px;
+	padding:0px !important;
+	margin-right:6%;
+	}
+	.input_and_button .edd-add-to-cart .edd-add-to-cart-label {
+	font-size: 12px;
+	}
+	.pop_heading h3{font-size: 16px;}
+	.input_and_button {
+	width: 95%;
+	}
+	.purchase_form .edd_download_purchase_form .edd_price_options ul{
+	height: 219px;
+	overflow-y: scroll;
+	margin-left: 20px;
+	}
+	.input_and_button .edd_purchase_submit_wrapper {
+	margin-top: 0px;
+	}
+}
+@media screen and (max-width: 320px){
+	.main_div{
+	width:100%;	
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 15px;
+	padding: 6% 5% 0% 5%;
+	}
+	.close{
+	width: 30px;
+	height: 30px;
+	line-height: 19px;
+	font-size: 22px;
+	padding:0px !important;
+	margin-right:6%;
+	}
+	.pop_heading h3{
+	font-size: 17px;
+	margin-top: 9px;
+	line-height: 22px;
+	}
+	.white_div{
+	height:100%;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	}
+	.input_and_button .edd_purchase_submit_wrapper {
+	width: 100%;
+	margin-right: 80px;
+	text-align:center;
+	}
+	.input_and_button .edd-add-to-cart .edd-add-to-cart-label {
+	font-size: 15px;
+	}
+	.pledge-verb{font-size: 15px;}
+	.input_and_button .atcf_custom_price_wrap {
+		width: 100%;
+		}
+	.input_and_button {
+	width: 95%;
+	}
+	.purchase_form .edd_download_purchase_form .edd_price_options ul{
+	height: 219px;
+	overflow-y: scroll;
+	margin-left: 20px;
+	}
+	
+}
