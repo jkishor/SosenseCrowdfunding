@@ -1,4 +1,6 @@
 Plugin Name : Sosense Crowdfunding
+version     : 1.2
+
 
 Shortcode used in plugin:
 1) [EDD-pricing-options id="any edd download id"  boxcolor="any color"  height="optional" ]
@@ -37,8 +39,10 @@ How to use:
 -Add shortcode ( do_shortcode('[ShowFundingstat]') ) in shortcode-content-title.php.
 -Add shortcode [EDD-pricing-options id="any edd download id"  boxcolor="any color"  height="optional" ] in any page.
 
+Changelogs:
 
-
+Fixes:
+Fixed autoselection of price in popup.
 
 
 	

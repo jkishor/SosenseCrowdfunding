@@ -91,6 +91,14 @@ margin-top: 3px;
  background-color: #2CCD72; 
  font-size: 15px;
 }
+.progressbar2 {
+ color: #fff;
+ text-align: center;
+ height:23px;
+ width: 0;
+ background-color:#2CCD72; 
+ font-size: 15px;
+}
 .widget-border-bottom {
 border-bottom: 1px solid #bdc3c7 ;
 border-top: 1px solid #bdc3c7;

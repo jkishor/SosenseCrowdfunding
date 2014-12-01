@@ -39,7 +39,7 @@ function my_child_theme_setup() {
 	$my_theme =  $my_theme->get( 'Template' );
 	$includewfile = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/'.$my_theme.'-child/widgets.php';
 	//echo dirname(__FILE__).'/widgets.php'; exit;
-	require_once dirname(__FILE__).'/widgets.php';
+	require_once dirname(__FILE__).'/widget-sales-stats.php';
 
 }
 
@@ -50,17 +50,6 @@ function payments_init() {
 	
 }
 
-function sosense_campaiging($atts){
-	$id =  $atts['id'];
-	$boxcolor = $atts['boxcolor'];
-	$height= $atts['height'];
-	ob_start();
-	include(plugin_dir_path( __FILE__ ) . 'sosense_campaign_html.php');
-	$var = ob_get_contents();
-	ob_end_clean();
-	$return = $var;
-	return $return;
-}
 
 function load_payments($atts) {
 	$dealId = $atts['dealid'];
@@ -96,6 +85,7 @@ function load_payments($atts) {
 function payments_init_2() {
 	add_shortcode('ShowFundingstat', 'load_payments2');
 	add_shortcode('EDD-pricing-options','sosense_campaiging');
+	add_shortcode('EDD_progressbar','progress_bar');
 }
 
 
@@ -151,7 +141,6 @@ function load_payments2($atts) {
 
 	<?php	
 		global $post;
-		//echo 'jugal kishor';
 		$post = get_post(); 
 					$pmeta = get_post_meta($dealId); 
 					$goaldata = $pmeta['sales_goal'][0];
@@ -164,7 +153,7 @@ function load_payments2($atts) {
 					<?php
 					 $raised = $pays; //edd_get_download_earnings_stats( get_the_ID() );
 	?><div>
-				<div style="width:30%;float: left;font-weight: bold;">
+				<div class="funded">
 				<?php  $percent = round(($raised/$goaldata) * 100); echo $percent.'%'.'<div style="font-weight: normal;color: #ADAFB0;">'.$rename_funded.'</div>' ;?>
 				</div>
 				<div style="font-weight: bold;"><?php
@@ -188,6 +177,30 @@ function load_payments2($atts) {
 				<?php
 	}
 }	
+
+
+function sosense_campaiging($atts){
+	$id =  $atts['id'];
+	$boxcolor = $atts['boxcolor'];
+	$height= $atts['height'];
+	ob_start();
+	include(plugin_dir_path( __FILE__ ) . 'sosense_campaign_html.php');
+	$var = ob_get_contents();
+	ob_end_clean();
+	$return = $var;
+	return $return;
+}
+
+
+function progress_bar($atts){
+$dealId = $atts['dealid'];
+ob_start();
+include(plugin_dir_path( __FILE__ ) . 'progress_bar.php');
+$var = ob_get_contents();
+ob_end_clean();
+$return = $var;
+return $return;
+}
 
 function cd_meta_box_add()
 {
