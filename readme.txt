@@ -1,5 +1,5 @@
 Plugin Name : Sosense Crowdfunding
-version     : 1.2
+version     : 1.3
 
 
 Shortcode used in plugin:
